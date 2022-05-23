@@ -1,49 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/7b2083314a.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lotus Shop</title>
 </head>
 <body>
-    <div class="header" style="height: 150px;">
+    <header class="header" style="height: 150px;">
         <div class="header-top">
             <div class="container">
                 <div class="header-top-left"> 
-                    <marquee behavior="" direction="left">
+                    <marquee behavior="" direction="left" style="white-space: nowrap;">
                         Lotus Shop xin kính chào quý khách. Chúc quý khách có một ngày vui vẻ.!
-                    </marquee>       
+                    </marquee>
                 </div>
                 <div class="header-top-right">
                     <a class="top-item" href="">
-                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-1.png?v=2793" alt="top-item-1">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-1.png?v=2793" style="height: 15px" alt="top-item-1">
                         <span>Trang chủ</span>
                     </a>
                     <a class="top-item" href="">
-                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-2.png?v=2793" alt="top-item-2">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-2.png?v=2793" style="height: 15px" alt="top-item-2">
                         <span>Hotline</span>
                     </a>
                     <a class="top-item" href="">
-                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-3.png?v=2793" alt="top-item-3">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-3.png?v=2793" style="height: 15px" alt="top-item-3">
                         <span>Hotline 2</span>
                     </a>
                     <a class="top-item" href="">
-                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-4.png?v=2793" alt="top-item-4">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-4.png?v=2793" style="height: 15px" alt="top-item-4">
                         <span>Hỗ trợ kỹ thuật</span>
                     </a>
                     <a class="top-item" href="">
-                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-5.png?v=2793" alt="top-item-5">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/header-top-image-item-5.png?v=2793" style="height: 15px" alt="top-item-5">
                         <span>Khuyến mãi</span>
                     </a>
                     <a class="top-item" href=""></a>
                 </div>
             </div>
         </div>
-        <div class="header-bottom" style="background-color: #fff;">
-            
+        <div class="header-bottom">
+            <div class="container" style="height: 110px;">
+                <div class="header-bottom-left">
+                    <a href="/Do-An-Co-So/index.html">
+                        <img src="/Do-An-Co-So/assets/imgs/Logo.png" style="height: 40px; width: 200px;" alt="Lotus-Shop">
+                    </a>
+                </div>
+                <div class="header-bottom-center">
+                    <div class="header-bottom-center-search">
+                        <form action="">
+                            <input type="hidden" name="type" id="product">
+                            <input required type="text" name="q" autocomplete="off" placeholder="Tìm kiếm sản phẩm...">
+                            <button class="search-icon" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <ul class="header-bottom-center-search-suggest" type="none">
+                            <li>
+                                <a href="" style="color: black;">Asus</a>
+                            </li>
+                            <li>
+                                <a href="" style="color: black;">Dell</a>
+                            </li>
+                            <li>
+                                <a href="" style="color: black;">Hp</a>
+                            </li>
+                            <li>
+                                <a href="" style="color: black;">MSI</a>
+                            </li>
+                            <li>
+                                <a href="" style="color: black;">Lenovo</a>
+                            </li>
+                            <li>
+                                <a href="" style="color: black;">Macbook</a>
+                            </li>
+                            <li>
+                                <a href="" style="color: black;">Gear</a>
+                            </li>
+                        </ul>
+                        <div class="header-bottom-center-search-smart" style="display: none;">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom-right">
+                    <div class="header-bottom-right-item">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/compare.png?v=2793" style="width: 30px; height: 30px;" alt="header-bottom-right-compare">
+                        <span>So sánh</span>
+                        <span class="header-bottom-right-item-count">0</span>
+                    </div>
+                    <div class="header-bottom-right-item">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/wishlist.png?v=2793" style="width: 30px; height: 30px;" alt="header-bottom-right-wishlist">
+                        <span>Yêu thích</span>
+                        <span class="header-bottom-right-item-count">0</span>
+                    </div>
+                    <div class="header-bottom-right-item">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/account.png?v=2793" style="width: 30px; height: 30px;" alt="header-bottom-right-account">
+                        <span>Tài khoản</span>
+                    </div>
+                    <div class="header-bottom-right-item">
+                        <img src="//theme.hstatic.net/200000306751/1000695789/14/cart-new.png?v=2793" style="width: 30px; height: 30px;" alt="header-bottom-right-cart">
+                        <span>Giỏ hàng</span>
+                        <span class="header-bottom-right-item-count">3</span>
+                    </div>
+                    <div class="header-bottom-right-item">
+                        <img src="https://file.hstatic.net/200000306751/file/menu__3__34e577491ad847ed8619de950ed771c2.png" style="width: 30px; height: 30px;" alt="header-bottom-right-menu">
+                    </div>
+                </div>
+                <div class="header-bottom-menu">
+                    <div class="header-bottom-menu-left">
+                        <div class="scroll-mega">
+                            <button class="f-button">
+                                <i class="fa-solid fa-bars" style="margin-right: 4px"></i>
+                                Danh mục sản phẩm
+                            </button>
+                            <div class="slider-sidebar-left"></div>     
+                        </div>
+                    </div>
+                    <div class="header-bottom-menu-right">
+                        <ul class="fHeader-menu0" type="none" style="display: flex;"> 
+                            <li class="header-nav">
+                                <a href="/Do-An-Co-So/index.html" style="color: black;">Trang chủ</a>
+                            </li>
+                            <li class="header-nav">
+                                <a href="" style="color: black;">Giới thiệu</a>
+                            </li>
+                            <li class="header-nav">
+                                <a href="" style="color: black;">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="header-nav">
+                                <a href="" style="color: black;">Blog</a>
+                            </li>
+                            <li class="header-nav">
+                                <a href="" style="color: black;">Kinh nghiệm mua sắm</a>
+                            </li>
+                            <li class="header-nav">
+                                <a href="" style="color: black;">Chính sách - Hướng dẫn</a>
+                            </li>
+                            <li class="header-nav">
+                                <a href="" style="color: black;">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>    
+    </header>    
 </body>
 </html>
