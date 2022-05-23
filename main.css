@@ -11,7 +11,6 @@ body {
     color: #212529;
 }
 /* CSS phần header */
-/* Header top */
 .header {
     width: 100%;
     background-color: #333;
@@ -19,7 +18,8 @@ body {
     top: 0;
 }
 
-.header .header-top {
+/* Header top */
+.header-top {
     background-color: #05092F;
     padding: 10px 0;
     box-sizing: border-box;
@@ -31,30 +31,12 @@ a {
     margin-left: 10px;
 }
 
-p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 20px;
-    text-align: center;
-    transform: translateX(100%);
-    animation: scroll-left 20s linear infinite;
-    color: #fff;
-    white-space: nowrap;
-}
-
-img {
-    font-size: 15px;
-    width: 15px;
-    height: 15px;
-}
-
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    max-width: 1280px;
 }
 
 .container {
@@ -74,3 +56,249 @@ img {
     box-sizing: border-box;
 }
 /* Header bottom */
+.header-bottom {
+    background-color: #fff;
+    padding: 10px 0 0;
+    box-sizing: border-box;
+    height: 117px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.header-bottom-left {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.header-bottom-center {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+/* iput search */
+.header-bottom-center-search form input {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 0px;
+}
+
+input {
+    background-clip: padding-box;
+    overflow: visible;
+}
+
+.header-bottom-center-search {
+    width: 90%;
+    position: relative;
+}
+
+.header-bottom-center-search form {
+    width: 100%;
+    position: relative;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.header-bottom-center-search form input {
+    width: 93%;
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 0px;
+}
+/* button search */
+.header-bottom-center-search form button {
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    right: 3px;
+    background: #05092F;
+    border-radius: 0px;
+    border: 1px solid #05092F;
+    width: 40px;
+    color: #fff;
+}
+
+.scroll-mega {
+    margin-left: -2px;
+}
+
+.header-bottom-center-search-suggest {
+    margin-top: 5px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fa-regular .fa-magnifying-glass {
+    width: 5px;
+    height: 5px;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 12px;
+}
+.header-bottom-center-search-suggest li {
+    margin-right: 10px;
+}
+.header-bottom-center-search-smart {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 1.5px rgb(0 0 0 / 50%);
+    padding: 10px;
+    z-index: 9;
+}
+.header-bottom-right {
+    width: calc(50% - 200px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-bottom-right-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header-bottom-right-item span:not(.header-bottom-right-item-count) {
+    width: 100%;
+    text-align: center;
+    margin-top: 2px;
+}
+.header-bottom-right-item-count {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: red;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+.header-bottom-right-item:last-child {
+    display: none;
+}
+
+/* Danh muc san pham */
+.header-bottom-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+.scroll-mega {
+    position: relative;
+    padding: 0 10px;
+}
+
+.scroll-mega button {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #05092F;
+}
+
+.f-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.f-button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.header-nav:hover {
+    background-color: #1d224b;
+}
+
+.header-nav:hover a {
+    color: #fff;
+}
+
+/* Side bar */
+.slider-sidebar-left {
+    display: none;
+    top: 100%;
+    left: 0;
+    bottom: inherit;
+}
+
+.slider-sidebar-left {
+    width: 250px;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: calc((100% - 1250px)/2);
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    z-index: 9;
+}
+
+/* bottom mnu right */
+.header-bottom-menu-right {
+    width: calc(100% - 250px);
+    padding-left: 12.5px;
+}
+.header-bottom-menu-right > ul > li:first-child {
+    padding-left: 0;
+}
+
+.header-bottom-menu-right > ul > li {
+    position: relative;
+    margin-right: 15px;
+    padding: 13px 12px 10px 5px;
+    text-transform: capitalize;
+}
+
+
